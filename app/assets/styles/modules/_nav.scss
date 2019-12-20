@@ -1,0 +1,32 @@
+.navbar {
+  .navbar-brand {
+    span {
+      font-size: 40px;
+
+      &:first-child {
+        color: #08526d;
+        font-weight: bold;
+      }
+
+      &:last-child {
+        color: #ec1c23;
+      }
+    }
+  }
+
+  .nav-link {
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-left: 20px;
+    color: #08526d;
+    font-weight: bold;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: #ec1c23 !important;
+      border-bottom: 3px solid #ec1c23;
+      transition: all .5s ease;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+doctype html
+html
+   include partials/header
+   body
+      // Top Bar
+      .top-bar.p-2.text-light
+         .container
+            .row
+               .col-sm
+                  i.px-2.fa.fa-phone
+                  span +111 222 333
+                  i.px-2.fa.fa-envelope
+                  span email@domain.com
+               .col-sm.text-right
+                  span Let's work together
+                  a.btn.btn-warning.btn-sm.text-dark Get Quote
+      
+      // Navbar
+      nav.navbar.navbar-expand-lg.navbar-light
+         .container
+            a.navbar-brand(href='#')
+               span Elite
+               span Corp
+            button.navbar-toggler(type='button' data-toggle='collapse' data-target='#main-nav' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+               span.navbar-toggler-icon
+            #main-nav.collapse.navbar-collapse
+               ul.navbar-nav.ml-auto
+                  li.nav-item
+                     a.nav-link(href='#') Home
+                  li.nav-item.active
+                     a.nav-link(href='#')
+                        | About 
+                        span.sr-only (current)
+                  li.nav-item
+                     a.nav-link(href='#') Work
+                  li.nav-item
+                     a.nav-link(href='#') Blog
+                  li.nav-item
+                     a.nav-link(href='#') Contact
+
+
+      script(src='./temp/scripts/App.js')
